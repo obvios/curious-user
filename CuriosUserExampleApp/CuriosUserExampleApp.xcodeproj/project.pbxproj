@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		558A35842D3801FA005DCC6A /* CuriousUser in Frameworks */ = {isa = PBXBuildFile; productRef = 558A35832D3801FA005DCC6A /* CuriousUser */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		558A35712D380193005DCC6A /* CuriosUserExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CuriosUserExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				558A35842D3801FA005DCC6A /* CuriousUser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = CuriosUserExampleApp;
 			packageProductDependencies = (
+				558A35832D3801FA005DCC6A /* CuriousUser */,
 			);
 			productName = CuriosUserExampleApp;
 			productReference = 558A35712D380193005DCC6A /* CuriosUserExampleApp.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 558A35682D380193005DCC6A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				558A35822D3801FA005DCC6A /* XCLocalSwiftPackageReference "../../CuriousUser" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 558A35722D380193005DCC6A /* Products */;
 			projectDirPath = "";
@@ -324,6 +333,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		558A35822D3801FA005DCC6A /* XCLocalSwiftPackageReference "../../CuriousUser" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../CuriousUser;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		558A35832D3801FA005DCC6A /* CuriousUser */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CuriousUser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 558A35692D380193005DCC6A /* Project object */;
 }
