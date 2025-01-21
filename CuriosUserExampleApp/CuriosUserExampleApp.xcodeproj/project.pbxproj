@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		558A35842D3801FA005DCC6A /* CuriousUser in Frameworks */ = {isa = PBXBuildFile; productRef = 558A35832D3801FA005DCC6A /* CuriousUser */; };
+		55DAE7D52D3FF8420023287D /* CuriousUser in Frameworks */ = {isa = PBXBuildFile; productRef = 55DAE7D42D3FF8420023287D /* CuriousUser */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55DAE7D52D3FF8420023287D /* CuriousUser in Frameworks */,
 				558A35842D3801FA005DCC6A /* CuriousUser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +73,7 @@
 			name = CuriosUserExampleApp;
 			packageProductDependencies = (
 				558A35832D3801FA005DCC6A /* CuriousUser */,
+				55DAE7D42D3FF8420023287D /* CuriousUser */,
 			);
 			productName = CuriosUserExampleApp;
 			productReference = 558A35712D380193005DCC6A /* CuriosUserExampleApp.app */;
@@ -101,7 +104,7 @@
 			mainGroup = 558A35682D380193005DCC6A;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				558A35822D3801FA005DCC6A /* XCLocalSwiftPackageReference "../../CuriousUser" */,
+				55DAE7D32D3FF8420023287D /* XCLocalSwiftPackageReference "../../curious-user" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 558A35722D380193005DCC6A /* Products */;
@@ -335,14 +338,18 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		558A35822D3801FA005DCC6A /* XCLocalSwiftPackageReference "../../CuriousUser" */ = {
+		55DAE7D32D3FF8420023287D /* XCLocalSwiftPackageReference "../../curious-user" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../CuriousUser;
+			relativePath = "../../curious-user";
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		558A35832D3801FA005DCC6A /* CuriousUser */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CuriousUser;
+		};
+		55DAE7D42D3FF8420023287D /* CuriousUser */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CuriousUser;
 		};
