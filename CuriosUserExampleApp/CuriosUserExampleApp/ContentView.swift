@@ -9,10 +9,10 @@ import SwiftUI
 import CuriousUser
 
 struct ContentView: View {
-    @EnvironmentObject var sessionManager: SessionManager
+    let sessionManager: SessionManager = SessionManager()
 
     var body: some View {
-        NotesListView()
+        NotesListView(sessionManager: sessionManager)
     }
 }
 
