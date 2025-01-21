@@ -28,29 +28,43 @@ struct NotesListView: View {
                 }
             }
             
-            // Add Note Button
-            Button(action: addNote) {
-                Text("Add Note")
-                    .fontWeight(.bold)
-                    .frame(maxWidth: .infinity)
+            switch sessionManager.sessionState {
+            case .authenticated(_):
+                // Add Note Button
+                Button(action: addNote) {
+                    Text("Add Note")
+                        .fontWeight(.bold)
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(8)
+                }
+                .padding()
+            case .guest:
+                if showUpgradePrompt {
+                    UpgradePromptView(
+                        title: "Premium Feature",
+                        message: "Log in to unlock premium content.",
+                        actionTitle: "Log In"
+                    ) {
+                        let user = User(id: "123", name: "John Doe", email: "john@example.com")
+                        sessionManager.logIn(user: user)
+                    }
+                } else {
+                    // Add Note Button
+                    Button(action: addNote) {
+                        Text("Add Note")
+                            .fontWeight(.bold)
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(8)
+                    }
                     .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(8)
+                }
             }
-            .padding()
-        }
-        .alert("Note Limit Reached", isPresented: $showUpgradePrompt) {
-            UpgradePromptView(
-                title: "Premium Feature",
-                message: "Log in to unlock premium content.",
-                actionTitle: "Log In"
-            ) {
-                let user = User(id: "123", name: "John Doe", email: "john@example.com")
-                sessionManager.logIn(user: user)
-            }
-        } message: {
-            Text("Sign up to create more notes!")
         }
         .navigationTitle("My Notes")
     }
