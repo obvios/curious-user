@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/obvios/curious-user/blob/main/Assets/CuriousUser.png" style="width: 80%; height: auto;">
+</p>
+
 # CuriousUser
 
 CuriousUser is a lightweight Swift library that allows iOS developers to support guest user sessions in their apps. It provides tools to manage guest and authenticated user states, gate features based on user session, and prompt users to upgrade when needed.
