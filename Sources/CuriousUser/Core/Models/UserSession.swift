@@ -9,6 +9,7 @@ import Foundation
 
 /// Represents the user's session state.
 public enum UserSession {
+    case none
     case guest
     case authenticated(User)
 }
