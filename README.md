@@ -21,14 +21,14 @@ CuriousUser is a lightweight Swift library that allows iOS developers to support
 
 1. Open your Xcode project.
 2. Go to **File > Add Packages**.
-3. Enter the URL of this repository: `https://github.com/your-username/CuriousUser.git`.
+3. Enter the URL of this repository: `https://github.com/obvios/curious-user.git`.
 4. Select the latest version and add it to your project.
 
 Alternatively, you can add it directly to your `Package.swift` file:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/your-username/CuriousUser.git", from: "1.0.0")
+    .package(url: "https://github.com/obvios/curious-user.git", from: "1.0.0")
 ]
 ```
 
