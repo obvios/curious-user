@@ -41,7 +41,7 @@ struct NotesListView: View {
                         .cornerRadius(8)
                 }
                 .padding()
-            case .guest:
+            case .guest, .none:
                 if notesListModel.showUpgradePrompt {
                     UpgradePromptView(
                         title: "Premium Feature",

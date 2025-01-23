@@ -14,8 +14,13 @@ struct CuriosUserExampleAppApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(sessionManager)
+            // if init state is none, show login
+            switch sessionManager.sessionState {
+            case .none:
+                LoginView(sessionManager: sessionManager)
+            case .authenticated, .guest:
+                ContentView(sessionManager: sessionManager)
+            }
         }
     }
 }

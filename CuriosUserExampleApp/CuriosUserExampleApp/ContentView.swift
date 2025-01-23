@@ -9,13 +9,9 @@ import SwiftUI
 import CuriousUser
 
 struct ContentView: View {
-    let sessionManager: SessionManager = SessionManager()
+    let sessionManager: SessionManager
 
     var body: some View {
         NotesListView(sessionManager: sessionManager)
     }
-}
-
-#Preview {
-    ContentView()
 }
