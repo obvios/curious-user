@@ -45,7 +45,7 @@ struct NotesListView: View {
                 if notesListModel.showUpgradePrompt {
                     UpgradePromptView(
                         title: "Premium Feature",
-                        message: "Log in to unlock premium content.",
+                        message: "Log in to create more notes.",
                         actionTitle: "Log In"
                     ) {
                         notesListModel.login()
