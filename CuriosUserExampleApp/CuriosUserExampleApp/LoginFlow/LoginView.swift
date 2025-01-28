@@ -9,7 +9,7 @@ import SwiftUI
 import CuriousUser
 
 struct LoginView: View {
-    let sessionManager: SessionManager
+    @EnvironmentObject var sessionManager: SessionManager
 
     var body: some View {
         VStack(spacing: 20) {

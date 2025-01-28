@@ -17,10 +17,10 @@ struct CuriosUserExampleAppApp: App {
             // if init state is none, show login
             switch sessionManager.sessionState {
             case .none:
-                LoginView(sessionManager: sessionManager)
+                LoginView()
             case .authenticated, .guest:
-                ContentView(sessionManager: sessionManager)
+                ContentView()
             }
-        }
+        }.environmentObject(sessionManager) // Add sessionManager to environent
     }
 }
